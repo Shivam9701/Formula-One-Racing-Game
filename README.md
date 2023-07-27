@@ -69,7 +69,7 @@ We welcome contributions to make f1 Retro Racer even better! If you find any iss
 
 ## License
 
-This project is licensed under the [The Unlicense](LICENSE), allowing you to use, modify, and distribute the code freely.
+This project is licensed under the [The Unlicense](LICENSE.txt), allowing you to use, modify, and distribute the code freely.
 
 Enjoy the thrill of F1 Retro Racer and relive the magic of old school arcade racing! Feel the nostalgia and have a blast racing through pixelated landscapes. If you encounter any problems or have any feedback, don't hesitate to let us know. Happy racing! 🏎️
 
