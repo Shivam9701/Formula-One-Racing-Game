@@ -17,7 +17,6 @@ Welcome to F1 Retro Racer, an adrenaline-pumping old school arcade racing game b
 - [Installation](#installation)
 - [Controls](#controls)
 - [How to Play](#how-to-play)
-- [Screenshots](#screenshots)
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -37,9 +36,9 @@ F1 Retro Racer takes you back in time to relive the excitement of arcade racing 
 
 To play Retro Racer, follow these simple steps:
 
-1. Clone the repository: `git clone https://github.com/your_username/retro-racer.git`
-2. Navigate to the project folder: `cd retro-racer`
-3. Compile the game using your C++ compiler of choice (e.g., g++): `g++ main.cpp -o retro_racer`
+1. Clone the repository: `git clone https://github.com/Shivam9701/Formula-One-Racing-Game.git`
+2. Navigate to the project folder 
+3. Compile the game using your C++ compiler of choice (e.g., g++): `g++ game.cpp -o retro_racer`
 4. Run the game: `./retro_racer`
 
 ## Controls
@@ -57,15 +56,9 @@ To play Retro Racer, follow these simple steps:
 3. Reach the finish line as fast as possible to set a new high score.
 4. Challenge yourself to beat your own records.
 
-## Screenshots
-
-![Gameplay 1](link_to_screenshot1.png)
-![Gameplay 2](link_to_screenshot2.png)
-![Leaderboard](link_to_leaderboard_screenshot.png)
-
 ## Contributing
 
-We welcome contributions to make f1 Retro Racer even better! If you find any issues or have suggestions for improvements, please feel free to open an issue or submit a pull request on the GitHub repository.
+We welcome contributions to make F1 Retro Racer even better! If you find any issues or have suggestions for improvements, please feel free to open an issue or submit a pull request on the GitHub repository.
 
 ## License
 
