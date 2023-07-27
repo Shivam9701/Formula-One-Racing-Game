@@ -14,18 +14,66 @@ public:
 private:
 	float fCarPos = 0.0f;
 	float fDistance = 0.0f;
+	float fSpeed = 0.0f;
+
+	float fCurvature = 0.0f; // curvature of track at any given time
+
+	vector<pair<float, float>> vecTrack; //curvature,distance
 
 protected:
+
 	//called by olcConsoleGameEngine
 	//wraps up user input and displays it in console
+
 	virtual bool OnUserCreate() {
+
+		vecTrack.push_back({ 0.0f, 10.0f }); // initial/final track is 0 curvature for 10 units
+		vecTrack.push_back({ 0.0f, 200.0f });
+		vecTrack.push_back({ 1.0f, 200.0f });
+		vecTrack.push_back({ 0.0f, 400.0f });
+		vecTrack.push_back({ -1.0f, 100.0f });
+		vecTrack.push_back({ 0.0f, 200.0f });
+		vecTrack.push_back({ -1.0f, 200.0f });
+		vecTrack.push_back({ 1.0f, 200.0f });
+
+
+
 		return true;
 	}
 
 	virtual bool OnUserUpdate(float fElapsedTime) {
-
+		 
+		// if up arrow pressed increase speed by acc * time (acc=2)
 		if (m_keys[VK_UP].bHeld)
-			fDistance += 80.0f * fElapsedTime;
+			fSpeed += 2.0f * fElapsedTime;
+		else
+			fSpeed -= 1.0f * fElapsedTime; // speed down at 1 acc
+
+		// clamp speed to 0 ,1
+		if (fSpeed < 0.0f) fSpeed = 0.0f;
+		if (fSpeed > 1.0f)fSpeed = 1.0f;
+
+		fDistance += (70.0f * fSpeed) * fElapsedTime;
+
+		//Get Point on Track
+		float fOffset = 0;
+		int nTrackSection = 0;
+
+		// find which track you are at using fDistance (the distance already travelled)
+		
+		while (nTrackSection < vecTrack.size() && fOffset <= fDistance) {
+
+			fOffset += vecTrack[nTrackSection].second;
+			nTrackSection++;
+		}
+
+		float fTargetCurvature = vecTrack[nTrackSection - 1].first;
+
+		//interpolate fCurvature (curv. at any point) to targetCurvature slowly using elapsed time for better smooth turning transition
+		
+		// if speed =0 no change in curvature else slowly interpolate to fcurvature
+		float fTrackCurveDiff = (fTargetCurvature - fCurvature) * fElapsedTime*fSpeed;
+		fCurvature += fTrackCurveDiff;
 
 		Fill(0, 0, ScreenWidth(), ScreenHeight(), L' ', 0);
 
@@ -37,7 +85,10 @@ protected:
 				
 				float fPerspective = float(y) / (ScreenHeight() / 2.0f);//0 at top 1 at bottom
 
-				float fMiddlePoint = 0.5f;
+				//change middle point to  suit perspective the function is choen after some hit and trial cases
+				
+				 float fMiddlePoint = 0.5f + fCurvature * powf((1.0f - fPerspective), 3);
+					;
 				float fRoadWidth = 0.1f +0.8f*fPerspective; // at top 10% of screen and bottom 90%
 				float fClipWidth = fRoadWidth * 0.15f;
 
