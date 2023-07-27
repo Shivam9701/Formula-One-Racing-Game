@@ -1,11 +1,14 @@
 olcConsoleGameEngine -Copyright 2018, 2019, 2020, 2021, 2022 OneLoneCoder.com
 
-# Retro Racer - Old School Arcade Racing Game
+# F1 Retro Racer - Old School Arcade Racing Game
 
+<!---
 ![Retro Racer Logo]
-<img src="https://img.freepik.com/free-photo/generic-f1-car-with-special-speed-effect_1048-10213.jpg?w=1060&t=st=1690459682~exp=1690460282~hmac=31c6bc38270ce3c28838e7c037c405bf665aa2f48f4569367fd1bc7b8b2eadcf" width =60% height =40%>
+-->
 
-Welcome to Retro Racer, an adrenaline-pumping old school arcade racing game built using C++ and the fantastic olcConsoleGameEngine by One Lone Coder. Get ready to experience the thrill of high-speed racing on retro-inspired tracks, reminiscent of the classic arcade games from the golden era of gaming.
+<img src="https://img.freepik.com/free-photo/generic-f1-car-with-special-speed-effect_1048-10213.jpg?w=1060&t=st=1690459682~exp=1690460282~hmac=31c6bc38270ce3c28838e7c037c405bf665aa2f48f4569367fd1bc7b8b2eadcf" width =50% height =20%>
+
+Welcome to F1 Retro Racer, an adrenaline-pumping old school arcade racing game built using C++ and the fantastic olcConsoleGameEngine by One Lone Coder. Get ready to experience the thrill of high-speed racing on retro-inspired tracks, reminiscent of the classic arcade games from the golden era of gaming.
 
 ## Table of Contents
 
@@ -20,15 +23,13 @@ Welcome to Retro Racer, an adrenaline-pumping old school arcade racing game buil
 
 ## Introduction
 
-Retro Racer takes you back in time to relive the excitement of arcade racing games. Immerse yourself in vibrant pixelated graphics and an upbeat chiptune soundtrack that will keep your adrenaline pumping. The game features a variety of tracks, each with its own unique challenges and obstacles to overcome.
+F1 Retro Racer takes you back in time to relive the excitement of arcade racing games. Immerse yourself in vibrant pixelated graphics and an upbeat chiptune soundtrack that will keep your adrenaline pumping. The game features a unique challenge and obstacles to overcome while driving your car on the track.
 
 ## Features
 
 - Classic arcade racing experience
 - Retro-inspired pixel art graphics
 - Thrilling chiptune soundtrack
-- Multiple tracks with varying difficulty
-- High scores leaderboard
 - Intuitive and responsive controls
 - Addictive gameplay that keeps you coming back for more
 
@@ -52,10 +53,9 @@ To play Retro Racer, follow these simple steps:
 ## How to Play
 
 1. Launch the game using the installation instructions above.
-2. Select a track from the main menu.
-3. Use the controls to steer your vehicle through the track, avoiding obstacles and other racers.
-4. Reach the finish line as fast as possible to set a new high score.
-5. Challenge yourself to beat your own records or compete with friends for the top spot on the leaderboard.
+2. Use the controls to steer your vehicle through the track, avoiding obstacles and other racers.
+3. Reach the finish line as fast as possible to set a new high score.
+4. Challenge yourself to beat your own records.
 
 ## Screenshots
 
@@ -65,11 +65,11 @@ To play Retro Racer, follow these simple steps:
 
 ## Contributing
 
-We welcome contributions to make Retro Racer even better! If you find any issues or have suggestions for improvements, please feel free to open an issue or submit a pull request on the GitHub repository.
+We welcome contributions to make f1 Retro Racer even better! If you find any issues or have suggestions for improvements, please feel free to open an issue or submit a pull request on the GitHub repository.
 
 ## License
 
 This project is licensed under the [The Unlicense](LICENSE), allowing you to use, modify, and distribute the code freely.
 
-Enjoy the thrill of Retro Racer and relive the magic of old school arcade racing! Feel the nostalgia and have a blast racing through pixelated landscapes. If you encounter any problems or have any feedback, don't hesitate to let us know. Happy racing! 🏎️
+Enjoy the thrill of F1 Retro Racer and relive the magic of old school arcade racing! Feel the nostalgia and have a blast racing through pixelated landscapes. If you encounter any problems or have any feedback, don't hesitate to let us know. Happy racing! 🏎️
 
