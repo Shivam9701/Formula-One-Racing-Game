@@ -127,7 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="olc.cpp" />
+    <ClCompile Include="game.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="olcConsoleGameEngine.h" />
